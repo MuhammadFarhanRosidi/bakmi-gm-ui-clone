@@ -8,14 +8,14 @@ export default function GMPoint() {
         padding: 12,
         flexDirection: "row",
         justifyContent: "space-between",
-        height: "50",
+        height: "53",
         backgroundColor: "white",
         borderRadius: 4,
       }}
     >
       <View>
         <Text style={{ fontWeight: "bold" }}>Bakmi GM Point</Text>
-        <Text>
+        <Text style={{ color: "#666" }}>
           40 will expired on 22 Feb 2024.{" "}
           <Text style={{ textDecorationLine: "underline", color: "blue" }}>
             See Details

@@ -6,8 +6,32 @@ import { GlobalStyles } from "../styles/GlobalStyles";
 const locations = [
   {
     name: "Galaxy Mall 3",
-    address:
-      "Mal Galaxy 3, lantai 4 Unit 4-344 & 4-345, Jl.Dr.Ir.Haji Soekarnno 178 Surabaya",
+    address: "Mal Galaxy 3, lantai 4 Unit 4-344 & 4-345",
+    distance: "2,4 km",
+  },
+  {
+    name: "Galaxy Mall 3",
+    address: "Mal Galaxy 3, lantai 4 Unit 4-344 & 4-345",
+    distance: "2,4 km",
+  },
+  {
+    name: "Galaxy Mall 3",
+    address: "Mal Galaxy 3, lantai 4 Unit 4-344 & 4-345",
+    distance: "2,4 km",
+  },
+  {
+    name: "Galaxy Mall 3",
+    address: "Mal Galaxy 3, lantai 4 Unit 4-344 & 4-345",
+    distance: "2,4 km",
+  },
+  {
+    name: "Galaxy Mall 3",
+    address: "Mal Galaxy 3, lantai 4 Unit 4-344 & 4-345",
+    distance: "2,4 km",
+  },
+  {
+    name: "Galaxy Mall 3",
+    address: "Mal Galaxy 3, lantai 4 Unit 4-344 & 4-345",
     distance: "2,4 km",
   },
   {
@@ -23,14 +47,12 @@ export function LocationList() {
   return (
     <View style={GlobalStyles.locationContainer}>
       <View style={GlobalStyles.locationHeader}>
-        <Text style={GlobalStyles.locationTitle}>Lokasi Outlet</Text>
-        <TouchableOpacity>
+        <Text style={GlobalStyles.locationTitle}>Outlet Location</Text>
+        {/* <TouchableOpacity>
           <Text style={GlobalStyles.seeAll}>LIHAT SEMUA</Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
       </View>
-      <Text style={GlobalStyles.locationSubtitle}>
-        Cek lokasi untuk menggunakan kartu
-      </Text>
+      <Text style={GlobalStyles.locationSubtitle}>Explore your options</Text>
 
       {locations.map((location, index) => (
         <TouchableOpacity

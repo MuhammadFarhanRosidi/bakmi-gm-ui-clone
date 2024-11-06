@@ -23,11 +23,16 @@ export default function HomeScreen() {
         <ScrollViewHorizontal />
         {/* Privilege Section */}
         <View style={GlobalStyles.section}>
-          <Text style={GlobalStyles.sectionTitle}>Privilege</Text>
+          <Text style={GlobalStyles.sectionTitle}>Privileges</Text>
           <Text style={GlobalStyles.sectionSubtitle}>
             Keep discovering our promo and news
           </Text>
           <View style={GlobalStyles.promoGrid}>
+            <PromoCard
+              title="Sign Up Reward 💰"
+              image={require("../assets/promo.png")}
+              expiry="Exp. 31 Dec 2024"
+            />
             <PromoCard
               title="Sign Up Reward 💰"
               image={require("../assets/promo.png")}

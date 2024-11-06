@@ -9,17 +9,21 @@ export function MembershipLevel() {
     <View style={GlobalStyles.membershipContainer}>
       <View
         style={{
-          elevation: 4,
-          padding: 12,
-          marginBottom: 12,
+          elevation: 2,
+          paddingHorizontal: 12,
+          marginBottom: 26,
           backgroundColor: "white",
           borderRadius: 4,
+          height: 215,
+          justifyContent: "space-between",
+          // backgroundColor: "red",
+          paddingVertical: 20,
         }}
       >
         <View style={GlobalStyles.levelHeader}>
           <Text style={GlobalStyles.levelTitle}>Your Level</Text>
           <TouchableOpacity>
-            <Text style={GlobalStyles.seeAll}>Learn More</Text>
+            <Text style={GlobalStyles.seeAll}>LEARN MORE</Text>
           </TouchableOpacity>
         </View>
 
@@ -28,7 +32,18 @@ export function MembershipLevel() {
             <View
               style={[GlobalStyles.levelIcon, GlobalStyles.activeLevelIcon]}
             >
-              <Icon name="crown" size={24} color="#888" />
+              <View
+                style={{
+                  backgroundColor: "#b6b6b6",
+                  height: 30,
+                  width: 30,
+                  borderRadius: 50,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Icon name="crown" size={26} color="#888" />
+              </View>
               <Text style={GlobalStyles.levelText}>Silver</Text>
               <Icon
                 name="check-circle"
@@ -39,17 +54,52 @@ export function MembershipLevel() {
             </View>
             <View style={GlobalStyles.levelConnector} />
             <View style={GlobalStyles.levelIcon}>
-              <Icon name="crown" size={24} color="#FFD700" />
+              <View
+                style={{
+                  backgroundColor: "#eee5aa",
+                  height: 30,
+                  width: 30,
+                  borderRadius: 50,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Icon name="crown" size={26} color="#FFD700" />
+              </View>
               <Text style={GlobalStyles.levelText}>Gold</Text>
             </View>
             <View style={GlobalStyles.levelConnector} />
             <View style={GlobalStyles.levelIcon}>
-              <Icon name="crown" size={24} color="#E5E4E2" />
+              <View
+                style={{
+                  backgroundColor: "#b6b6b6",
+                  height: 30,
+                  width: 30,
+                  borderRadius: 50,
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Icon name="lock" size={26} color="#E5E4E2" />
+              </View>
               <Text style={GlobalStyles.levelText}>Platinum</Text>
             </View>
           </View>
           <View style={GlobalStyles.progressBar}>
             <View style={GlobalStyles.progressFill} />
+            <View
+              style={{
+                width: 20,
+                height: 20,
+                backgroundColor: "white",
+                position: "absolute",
+                borderRadius: 20,
+                borderColor: "orange",
+                borderWidth: 5,
+                top: -7,
+                left: 380,
+              }}
+            ></View>
           </View>
         </View>
 
@@ -68,41 +118,38 @@ export function MembershipLevel() {
 
       <View style={GlobalStyles.menuGrid}>
         <TouchableOpacity style={GlobalStyles.menuItem}>
-          <Icon name="basket" size={24} color="#4CAF50" />
+          <Icon name="basket" size={44} color="#4CAF50" />
           <Text style={GlobalStyles.menuText}>Order</Text>
         </TouchableOpacity>
         <TouchableOpacity style={GlobalStyles.menuItem}>
-          <Icon name="ticket-percent" size={24} color="#FF5722" />
+          <Icon name="ticket-percent" size={44} color="#FF5722" />
           <Text style={GlobalStyles.menuText}>Redeem</Text>
         </TouchableOpacity>
         <TouchableOpacity style={GlobalStyles.menuItem}>
-          <Icon name="ticket" size={24} color="#2196F3" />
+          <Icon name="ticket" size={44} color="#2196F3" />
           <Text style={GlobalStyles.menuText}>My Vouchers</Text>
-          <View style={GlobalStyles.badge}>
-            <Text style={GlobalStyles.badgeText}>1</Text>
-          </View>
         </TouchableOpacity>
         <TouchableOpacity style={GlobalStyles.menuItem}>
-          <Icon name="star" size={24} color="#FFC107" />
+          <Icon name="star" size={44} color="#FFC107" />
           <Text style={GlobalStyles.menuText}>Privilege</Text>
         </TouchableOpacity>
         <TouchableOpacity style={GlobalStyles.menuItem}>
-          <Icon name="history" size={24} color="#9E9E9E" />
+          <Icon name="history" size={44} color="#9E9E9E" />
           <Text style={GlobalStyles.menuText}>History</Text>
         </TouchableOpacity>
         <TouchableOpacity style={GlobalStyles.menuItem}>
-          <Icon name="message" size={24} color="#8BC34A" />
+          <Icon name="message" size={44} color="#8BC34A" />
           <Text style={GlobalStyles.menuText}>Contact Us</Text>
         </TouchableOpacity>
       </View>
 
-      <View style={{ marginVertical: 20 }}>
+      <View style={{ marginTop: 20, marginBottom: 40 }}>
         <Image
           source={require("../assets/1.png")}
           style={{
             width: "100%",
-            height: 200,
-            borderRadius: 12,
+            height: 208,
+            borderRadius: 8,
             objectFit: "cover",
           }}
         />

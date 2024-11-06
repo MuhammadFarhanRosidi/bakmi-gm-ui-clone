@@ -73,22 +73,25 @@ export default function ScrollViewHorizontal() {
           </Text>
           <Text style={{ fontSize: 12 }}>Earn more to get your rewards</Text>
         </View>
-        <Text style={{ fontWeight: "bold", color: "orange" }}>SEE ALL</Text>
+        <Text style={{ fontWeight: "900", color: "#fa8830" }}>SEE ALL</Text>
       </View>
       <ScrollView
         showsHorizontalScrollIndicator={false}
         horizontal={true}
-        style={{ backgroundColor: "#fff" }}
+        style={{ backgroundColor: "#fff", marginTop: 20 }}
       >
         {rewardsData.map((reward) => (
           <TouchableOpacity key={reward.id} style={{ padding: 8 }}>
             <View
               style={{
                 backgroundColor: "white",
-                borderRadius: 8,
+                borderRadius: 6,
                 elevation: 2,
-                width: 150,
-                height: 150,
+                width: 185,
+                height: 185,
+                justifyContent: "center",
+                alignItems: "center",
+                marginBottom: 10,
               }}
             >
               <Image
@@ -99,7 +102,7 @@ export default function ScrollViewHorizontal() {
             <Text style={{ fontWeight: "bold", marginTop: 12 }}>
               {reward.name}
             </Text>
-            <Text style={{ fontWeight: "bold", color: "orange" }}>
+            <Text style={{ fontWeight: "bold", color: "#fa8830" }}>
               {reward.points} Pts
             </Text>
           </TouchableOpacity>

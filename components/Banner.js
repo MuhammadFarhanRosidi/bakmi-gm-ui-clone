@@ -3,12 +3,12 @@ import Swiper from "react-native-swiper";
 
 export default function Banner() {
   return (
-    <View style={{ height: 200, marginTop: 60 }}>
+    <View style={{ height: 245, marginTop: 60 }}>
       <Swiper
         autoplay
         autoplayTimeout={3}
         showsPagination={false}
-        style={{ height: 200 }}
+        style={{ height: "100%" }}
       >
         <Image
           source={require("../assets/1.png")}

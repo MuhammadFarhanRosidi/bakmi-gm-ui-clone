@@ -12,9 +12,9 @@ export const GlobalStyles = StyleSheet.create({
   },
   header: {
     flexDirection: "row",
-    justifyContent: "space-between",
+    justifyContent: "space-evenly",
     alignItems: "center",
-    paddingHorizontal: 16,
+    paddingRight: 16,
     paddingBottom: 12,
     backgroundColor: "#fff",
     borderBottomWidth: 1,
@@ -43,31 +43,34 @@ export const GlobalStyles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   sectionTitle: {
-    fontSize: 24,
-    fontWeight: "bold",
+    fontSize: 20,
+    fontWeight: "900",
     marginBottom: 2,
   },
   sectionSubtitle: {
-    fontSize: 16,
+    fontSize: 12,
     color: "#666",
-    marginBottom: 16,
+    marginBottom: 28,
   },
   promoGrid: {
     flexDirection: "row",
     flexWrap: "wrap",
     marginHorizontal: -8,
-    justifyContent: "center",
+    // justifyContent: "center",
   },
   membershipContainer: {
     backgroundColor: "#fff",
-    padding: 16,
+    paddingHorizontal: 16,
+    paddingVertical: 18,
     marginTop: 8,
   },
   levelHeader: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginBottom: 16,
+    // marginBottom: 16,
+    // marginTop: 20,
+    // backgroundColor: "red",
   },
   levelTitle: {
     fontSize: 18,
@@ -79,31 +82,38 @@ export const GlobalStyles = StyleSheet.create({
     fontWeight: "bold",
   },
   levelProgress: {
+    marginTop: 32,
     // marginBottom: 16,
+    // alignItems: "center",
   },
   levelIcons: {
     flexDirection: "row",
-    justifyContent: "space-between",
+    justifyContent: "center",
     alignItems: "center",
-    marginBottom: 8,
+    marginBottom: 16,
+    paddingHorizontal: 40,
+    // backgroundColor: "red",
   },
   levelIcon: {
     alignItems: "center",
     position: "relative",
+    // backgroundColor: "red",
   },
   activeLevelIcon: {
     opacity: 1,
   },
   checkIcon: {
     position: "absolute",
-    top: -8,
+    top: 14,
     right: -8,
   },
   levelConnector: {
-    flex: 1,
+    // flex: 1,
     height: 2,
-    backgroundColor: "#E0E0E0",
-    marginHorizontal: 8,
+    width: 30,
+    backgroundColor: "black",
+    marginHorizontal: 24,
+    bottom: 10,
   },
   levelText: {
     marginTop: 4,
@@ -111,15 +121,15 @@ export const GlobalStyles = StyleSheet.create({
     color: "#666",
   },
   progressBar: {
-    height: 4,
-    backgroundColor: "#E0E0E0",
+    height: 8,
+    backgroundColor: "#f1f1f1",
     borderRadius: 2,
     marginTop: 8,
   },
   progressFill: {
     width: "33%",
     height: "100%",
-    backgroundColor: "#4CAF50",
+    // backgroundColor: "#4CAF50",
     borderRadius: 2,
   },
   targetText: {
@@ -132,14 +142,17 @@ export const GlobalStyles = StyleSheet.create({
     flexWrap: "wrap",
     marginHorizontal: -8,
     marginTop: 16,
+    height: 230,
+    // backgroundColor: "red",
+    // flexDirection: "column",
   },
   menuItem: {
     width: "33.33%",
-    padding: 8,
+    padding: 24,
     alignItems: "center",
   },
   menuText: {
-    marginTop: 4,
+    marginTop: 10,
     fontSize: 12,
     color: "#333",
   },
@@ -164,10 +177,10 @@ export const GlobalStyles = StyleSheet.create({
   promoCard: {
     width: "45%",
     // padding: 8,
-    marginHorizontal: 8,
-    height: 280,
+    marginHorizontal: 10,
+    height: 295,
     borderRadius: 8,
-    marginBottom: 8,
+    marginBottom: 26,
     backgroundColor: "white",
     elevation: 4,
   },
@@ -184,7 +197,8 @@ export const GlobalStyles = StyleSheet.create({
   promoTitle: {
     fontSize: 16,
     fontWeight: "bold",
-    marginBottom: 4,
+    marginBottom: 14,
+    marginTop: 2,
   },
   promoExpiry: {
     fontSize: 12,
@@ -193,7 +207,7 @@ export const GlobalStyles = StyleSheet.create({
 
   // LocationList styles
   locationContainer: {
-    padding: 16,
+    paddingHorizontal: 16,
     backgroundColor: "#fff",
   },
   locationHeader: {
@@ -203,8 +217,8 @@ export const GlobalStyles = StyleSheet.create({
     marginBottom: 8,
   },
   locationTitle: {
-    fontSize: 18,
-    fontWeight: "bold",
+    fontSize: 20,
+    fontWeight: "900",
   },
   locationSubtitle: {
     fontSize: 14,
@@ -212,9 +226,11 @@ export const GlobalStyles = StyleSheet.create({
     marginBottom: 16,
   },
   locationCard: {
-    padding: 16,
+    // padding: 16,
     borderBottomWidth: 1,
+    paddingBottom: 4,
     borderBottomColor: "#E0E0E0",
+    marginBottom: 10,
   },
   lastLocationCard: {
     borderBottomWidth: 0,
@@ -235,6 +251,7 @@ export const GlobalStyles = StyleSheet.create({
   distanceContainer: {
     flexDirection: "row",
     alignItems: "center",
+    marginBottom: 4,
   },
   distanceText: {
     marginLeft: 4,
