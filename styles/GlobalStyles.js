@@ -55,7 +55,7 @@ export const GlobalStyles = StyleSheet.create({
   promoGrid: {
     flexDirection: "row",
     flexWrap: "wrap",
-    marginHorizontal: -8,
+    marginHorizontal: -16,
     // justifyContent: "center",
   },
   membershipContainer: {
