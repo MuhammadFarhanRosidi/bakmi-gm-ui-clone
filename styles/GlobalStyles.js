@@ -56,7 +56,8 @@ export const GlobalStyles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     marginHorizontal: -16,
-    // justifyContent: "center",
+    justifyContent: "center",
+    gap: 16,
   },
   membershipContainer: {
     backgroundColor: "#fff",
@@ -176,11 +177,12 @@ export const GlobalStyles = StyleSheet.create({
   // PromoCard styles
   promoCard: {
     width: "45%",
+    // flex: 1,
     // padding: 8,
-    marginHorizontal: 10,
+    // marginHorizontal: 10,
     height: 295,
     borderRadius: 8,
-    marginBottom: 26,
+    // marginBottom: 26,
     backgroundColor: "white",
     elevation: 4,
   },
